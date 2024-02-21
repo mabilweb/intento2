@@ -3,7 +3,9 @@ import pandas as pd
 import plotly.express as px
 
 
-car_data = pd.read_csv('C:/Users/h4mab/proyec2/intento2/vehicles_us.csv') # leer los datos
+car_data = pd.read_csv(open("vehicles_us.csv")) # leer los datos
+
+
 hist_button = st.button('Construir histograma') # crear un botón
 hist_button2 = st.button('Construir dispersión') # crear un botón
         
